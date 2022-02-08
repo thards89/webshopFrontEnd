@@ -7,7 +7,7 @@
 }
 
 .optionsContainer {
-  background-color: rgb(73, 212, 73);
+  background-color: #8568ff;
   min-width: 30%;
   max-width: 60%;
   height: 60px;
@@ -22,7 +22,7 @@
 .linksContainer {
   width: 400px;
   height: 50px;
-  background-color: rgb(216, 64, 153);
+  background-color: #8568ff;
   margin-left: 100px;
 }
 
@@ -47,7 +47,7 @@
   min-width: 10%;
   max-width: 15%;
   height: 60px;
-  background-color: rgb(250, 25, 25);
+  background-color: #8568ff;
 }
 
 .icons {

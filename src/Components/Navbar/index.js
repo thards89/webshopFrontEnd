@@ -11,15 +11,8 @@ const Navbar = () => {
       <div className="optionsContainer">
         <div className="linksContainer">
           <div className="links">
-            <NavLink
-              to="/"
-              className="links"
-              style={({ isActive }) =>
-                isActive ? { color: "white" } : undefined
-              }
-            >
-              Home
-            </NavLink>
+            <NavLink to="/" className="links" style={({ isActive }) =>
+            isActive ? { color: "white" } : undefined}>Home</NavLink>
             <NavLink
               to="/shop"
               className="links"

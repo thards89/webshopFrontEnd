@@ -1,0 +1,30 @@
+.picContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;  
+}
+
+.smallPicsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.smallPic {
+    background-color: #8568ff;
+    width: 111px;
+    height: 117px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+   }
+
+.largePic {
+    background-color:#8568ff;
+    width: 276px;
+    height: 374px;
+    border-radius: 3px;
+    display: flex;
+ }

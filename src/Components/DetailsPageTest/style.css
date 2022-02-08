@@ -1,0 +1,21 @@
+.containerAll {
+font-family: Crimson-Pro;
+display: flex;
+align-content: space-around;
+flex-wrap: wrap;
+}
+
+.containerPic {
+margin-right: 30px;
+margin-left: 150px;
+    }
+
+.containerProd {
+    margin-top: 75px;
+    }
+
+.containerDescrip {
+    margin-left: 90px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}

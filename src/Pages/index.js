@@ -1,5 +1,3 @@
-export * from "./About";
+export * from "./DetailsPage";
 export * from "./HomePage";
 export * from "./Shop";
-
-//Need to do this for the NavBar
