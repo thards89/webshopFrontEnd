@@ -1,5 +1,11 @@
-const Homepage = () => {
-  return <h1>Hello from Home Page</h1>;
+import "./style.css";
+
+const HomePage = () => {
+  return (
+    <div className="container">
+      <h1>Hello from Home Page</h1>;
+    </div>
+  );
 };
 
-export { Homepage };
+export { HomePage };
