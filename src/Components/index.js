@@ -3,6 +3,6 @@ export * from "./ProductInfo";
 export * from "./ImagesInfo";
 export * from "./DetailsPageTest";
 export * from "./Description";
-export * from "./MoreDetails";
+export * from "./Banner";
 
 

@@ -3,20 +3,26 @@ import { NavLink } from "react-router-dom";
 import { AiOutlineUser, AiOutlineShoppingCart, AiOutlineHeart, AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 
-const ProductInfo = () => {
+const ProductInfo = (props) => {
     return (
-      <div>
-          <div><h2>Playwood arm chair</h2></div>
-          <div><img style={{width:69}} src="https://icon-library.com/images/five-stars-icon/five-stars-icon-24.jpg"></img><span>(22)</span>
-          &nbsp;&nbsp;&nbsp; <button>Add Review</button>
+      <div className="general">
+          <h2>{props.title}</h2>
+          <div className="row">
+          <img style={{width:100}} src="https://icon-library.com/images/five-stars-icon/five-stars-icon-24.jpg">
+          </img>
+          <button onClick={() => console.log("Add to cart!")}>Add Review</button>
+          <span><b>Rating: </b>{props.rating}</span>
           </div>
-          <div>$32,00</div>
-          <div><p>Lorem ipsum sit amet, consectetur adipiscing elit. Maurits tellus porttitor purus,
-              et volupat sit.</p>
-          </div>
-          <div><button><AiOutlineShoppingCart  />Add to Cart</button> <button><AiOutlineHeart />Favorite</button></div>
-          <div><p>Categories: This will be a component</p></div>
-          <div><p>Share &nbsp; &nbsp;<BsFacebook />&nbsp;<AiFillInstagram />&nbsp;<AiFillTwitterCircle /></p></div>
+          <p>${props.price}</p>
+          <p>Description: {props.description}</p>
+          <button onClick={() => console.log("Add to cart!")}><AiOutlineShoppingCart  />&nbsp;Add to Cart</button> 
+          <button onClick={() => console.log("Add to cart!")}><AiOutlineHeart />&nbsp;Favorite</button>
+          <p><b>Category:</b> {" "}
+          {props.categoryId === 1 && "Electronics"}
+          {props.categoryId === 2 && "Jewelery"}
+          {props.categoryId === 3 && "Men's Clothing"}
+          {props.categoryId === 4 && "Women's Clothing"}</p>
+          <p>Share &nbsp; &nbsp;<BsFacebook />&nbsp;<AiFillInstagram />&nbsp;<AiFillTwitterCircle /></p>
 
 
       </div>

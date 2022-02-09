@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
+import { ProductInfo } from "../../Components/ProductInfo";
+import { ImagesInfo } from "../../Components";
 
 
 const DetailsPage = () => {
@@ -24,12 +26,21 @@ const DetailsPage = () => {
   
   
   return products ? (
-    <div>
-      <p></p>
-      <h2>Title: {products.title}</h2>
-      <h2>Price: {products.price}</h2>
-      <h2>Description: {products.description}</h2>
-      <h2>Rating: {products.rating}</h2>
+    <div className="containerAll">
+      <div className="picSize">
+      <ImagesInfo
+      mainImage= {products.mainImage}
+      />
+      </div>
+      <div>
+      <ProductInfo
+      title= {products.title}
+      price= {products.price}
+      description= {products.description}
+      rating= {products.rating}
+      categoryId = {products.categoryId}
+      /> 
+      </div>
       </div>
   ) : (
     <p>Loading ...</p>
