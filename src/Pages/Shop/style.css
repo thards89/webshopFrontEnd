@@ -1,0 +1,13 @@
+.productDetailsContainer {
+  width: 100%;
+  margin-block-start: auto;
+  border: thin;
+  border-color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.buttons {
+  justify-content: flex-start;
+}
