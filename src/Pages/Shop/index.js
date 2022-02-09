@@ -2,6 +2,7 @@ import "./style.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai";
+import { Categories } from "../../Components/Categories";
 
 const Shop = () => {
   const [products, setProducts] = useState(null);
@@ -26,6 +27,7 @@ const Shop = () => {
   return (
     <div>
       <h1>Hello from Shop Page</h1>
+      <Categories />
       <p>
         {!products
           ? "I am Loading"
