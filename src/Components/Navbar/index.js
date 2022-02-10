@@ -1,8 +1,10 @@
 import "./style.css";
 import { NavLink } from "react-router-dom";
-import { AiOutlineUser, AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai";
-
-
+import {
+  AiOutlineUser,
+  AiOutlineShoppingCart,
+  AiOutlineHeart,
+} from "react-icons/ai";
 
 const Navbar = () => {
   return (
@@ -47,7 +49,16 @@ const Navbar = () => {
       </div>
       <div className="iconsContainer">
         <div className="icons">
-        <AiOutlineUser/> <AiOutlineShoppingCart /> <AiOutlineHeart />
+          <NavLink
+            to="/signup"
+            className="links"
+            style={({ isActive }) =>
+              isActive ? { color: "white" } : undefined
+            }
+          >
+            <AiOutlineUser />
+          </NavLink>
+          <AiOutlineShoppingCart /> <AiOutlineHeart />
         </div>
       </div>
     </div>
