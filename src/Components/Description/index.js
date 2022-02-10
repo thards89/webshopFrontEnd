@@ -5,8 +5,6 @@ const Description = () => {
     <div>
         <div className="containerDescrip">
             <div className="title">
-                <span><b>Description</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
-                <span><b>Additional Info</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
                 <span><b>Reviews</b></span>&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
             <div>

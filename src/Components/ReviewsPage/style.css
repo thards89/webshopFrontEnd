@@ -1,0 +1,6 @@
+.closeButton {
+color: Red;
+display: flex;
+justify-content: flex-end;
+}
+

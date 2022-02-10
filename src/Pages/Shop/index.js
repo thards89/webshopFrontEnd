@@ -1,8 +1,8 @@
 import "./style.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
-import { ShopLayOut } from "../../Components/ShopLayOut";
+import { ShopLayOut, ImagesInfoSmall } from "../../Components";
+
 
 const Shop = () => {
   const [products, setProducts] = useState(null);
@@ -32,22 +32,23 @@ const Shop = () => {
           ? "I am Loading"
           : products.map((product) => {
               return (
-                <div key={product.id}>
-                  <div className="img">
-                    <img width="200px" src={product.mainImage} />
+                <div className= "containerAllShop" key={product.id}>
+                  <div className="mainContainer">
+                    <div>
+                      <ImagesInfoSmall
+                      mainImage= {product.mainImage} />
+                    </div>
+                    <div>
+                      <ShopLayOut 
+                        id= {product.id}
+                        title= {product.title}
+                        price= {product.price} 
+                        rating= {product.rating}
+                        description= {product.description}
+                  />
                   </div>
-                  <div className="productsDetails">
-                    <h3>{product.title}</h3>
-                    <p>
-                      $ {product.price} Rating: {product.rating}
-                    </p>
-                    <p>Description: {product.description}</p>
                   </div>
-                  <div className="buttons">
-                    {" "}
-                    <AiOutlineShoppingCart /> <AiOutlineHeart /><AiOutlineZoomIn />
                   </div>
-                </div>
               );
             })}
       </p>
