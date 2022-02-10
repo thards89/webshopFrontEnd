@@ -1,7 +1,11 @@
 import "./style.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai";
+import {
+  AiOutlineShoppingCart,
+  AiOutlineHeart,
+  AiOutlineZoomIn,
+} from "react-icons/ai";
 import { Categories } from "../../Components/Categories";
 
 const Shop = () => {
@@ -10,8 +14,7 @@ const Shop = () => {
   const getProducts = async () => {
     try {
       const response = await axios.get("http://localhost:4000/products");
-      //Need to make sure that whatever is in the url of the backend, just copy paste here
-      console.log(response.data[1]);
+      //console.log(response.data[1]);
       setProducts(response.data);
     } catch (e) {
       console.log(
@@ -43,10 +46,11 @@ const Shop = () => {
                       $ {product.price} Rating: {product.rating}
                     </p>
                     <p>Description: {product.description}</p>
-                  </div>
-                  <div className="buttons">
-                    {" "}
-                    <AiOutlineShoppingCart /> <AiOutlineHeart />
+                    <div className="buttons">
+                      {" "}
+                      <AiOutlineShoppingCart /> <AiOutlineHeart />{" "}
+                      <AiOutlineZoomIn />
+                    </div>
                   </div>
                 </div>
               );
