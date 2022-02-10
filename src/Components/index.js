@@ -4,5 +4,5 @@ export * from "./ImagesInfo";
 export * from "./Description";
 export * from "./Banner";
 export * from "./ShopLayOut";
-
-
+export * from "./CategoriesBox";
+export * from "./Categories";

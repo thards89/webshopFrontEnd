@@ -1,8 +1,13 @@
 import "./style.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { AiOutlineShoppingCart, AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
-import { ShopLayOut } from "../../Components/ShopLayOut";
+import {
+  AiOutlineShoppingCart,
+  AiOutlineHeart,
+  AiOutlineZoomIn,
+} from "react-icons/ai";
+
+import { CategoriesBox } from "../../Components";
 
 const Shop = () => {
   const [products, setProducts] = useState(null);
@@ -26,7 +31,9 @@ const Shop = () => {
 
   return (
     <div>
-      {/* <h1>Hello from Shop Page</h1> */}
+      <h1>
+        <CategoriesBox />
+      </h1>
       <p>
         {!products
           ? "I am Loading"
@@ -45,7 +52,8 @@ const Shop = () => {
                   </div>
                   <div className="buttons">
                     {" "}
-                    <AiOutlineShoppingCart /> <AiOutlineHeart /><AiOutlineZoomIn />
+                    <AiOutlineShoppingCart /> <AiOutlineHeart />
+                    <AiOutlineZoomIn />
                   </div>
                 </div>
               );
