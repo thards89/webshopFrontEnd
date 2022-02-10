@@ -50,7 +50,7 @@ const Navbar = () => {
       <div className="iconsContainer">
         <div className="icons">
           <NavLink
-            to="/signup"
+            to="/user"
             className="links"
             style={({ isActive }) =>
               isActive ? { color: "white" } : undefined

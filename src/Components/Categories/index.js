@@ -22,4 +22,5 @@ const Categories = (props) => {
     </div>
   );
 };
+
 export { Categories };

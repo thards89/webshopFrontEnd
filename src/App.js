@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route, NavLink } from "react-router-dom";
-import { HomePage, About, Shop, DetailsPage, Signup } from "./Pages"; // Without the index.js in the main pages folder, this will not work
+import { HomePage, About, Shop, DetailsPage, User } from "./Pages"; // Without the index.js in the main pages folder, this will not work
 import { Navbar, Banner } from "./Components";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
         <Route path="/details/:id" element={<DetailsPage />} />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/user" element={<User />} />
       </Routes>
     </div>
   );
