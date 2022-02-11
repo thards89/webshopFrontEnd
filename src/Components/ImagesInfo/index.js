@@ -1,22 +1,13 @@
 import "./style.css";
 
 const ImagesInfo = (props) => {
-    return (
-      <div className="picContainer">
-          <div className="largePic">
-        <img style={{ width: 276}} src={props.mainImage} alt="product"></img>
-          </div>
-     </div>
-    );
-  };
-  
-  export { ImagesInfo };
+  return (
+    <div className="picContainer">
+      <div className="largePic">
+        <img style={{ width: 276 }} src={props.mainImage} alt="product"></img>
+      </div>
+    </div>
+  );
+};
 
-
-
-            
-          {/* <div className="smallPicsContainer"> 
-          <div className="smallPic"></div>
-          <div className="smallPic"></div>
-          <div className="smallPic"></div>
-          </div> */}
+export { ImagesInfo };

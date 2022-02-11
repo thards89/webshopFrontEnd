@@ -1,0 +1,9 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 30px;
+  font-family: "Crismon";
+  background-color: black;
+  color: white;
+}

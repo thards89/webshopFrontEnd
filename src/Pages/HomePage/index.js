@@ -1,10 +1,16 @@
 import "./style.css";
+import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Hello from Home Page</h1>
-    </div>
+    <NavLink to="/shop">
+      <img
+        className="image"
+        style={{ width: 650 }}
+        src="https://kidzzeyezz.nl/images/news/originals/sale_2017_05_24_122833.png"
+        alt="sale"
+      />
+    </NavLink>
   );
 };
 

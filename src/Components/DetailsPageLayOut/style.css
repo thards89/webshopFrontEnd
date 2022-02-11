@@ -1,12 +1,12 @@
 .general {
-    width: 500px;
-    height: 500px;
-    margin-top: 30px;
-    line-height: 30px;
+  width: 500px;
+  height: 500px;
+  margin-top: 30px;
+  line-height: 30px;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
 }

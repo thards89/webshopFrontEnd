@@ -1,15 +1,12 @@
 .picContainer {
-    display: flex;
-    flex-wrap: wrap;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .smallPic {
-     width: 100px;
-    height: 200px;
-    border-radius: 3px;
-    display: flex;
-    justify-content: center;
- }
-
- 
+  width: 100px;
+  height: 200px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+}

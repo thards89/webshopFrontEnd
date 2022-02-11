@@ -40,7 +40,7 @@
   height: 20px;
   background-color: rgb(238, 227, 233);
   margin-right: 50px;
-  box-shadow:none;
+  box-shadow: none;
 }
 
 .iconsContainer {
@@ -51,8 +51,7 @@
 }
 
 .icons {
-margin-top: 20px;
-margin-left: 40px;
-margin-right: 20px;
-
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-right: 20px;
 }

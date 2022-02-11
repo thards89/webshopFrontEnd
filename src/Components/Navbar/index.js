@@ -1,10 +1,12 @@
 import "./style.css";
 import { NavLink } from "react-router-dom";
-import { AiOutlineUser, AiOutlineShoppingCart, AiOutlineHeart } from "react-icons/ai";
+import {
+  AiOutlineUser,
+  AiOutlineShoppingCart,
+  AiOutlineHeart,
+} from "react-icons/ai";
 
-
-
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div className="container">
       <div></div>
@@ -38,6 +40,15 @@ const Navbar = () => {
             >
               About
             </NavLink>
+            {/* <NavLink
+              to="/users" 
+              className="links"
+              style={({ isActive }) =>
+                isActive ? { color: "white" } : undefined
+              }
+            >
+              Users
+            </NavLink> */}
             &nbsp;
           </div>
         </div>
@@ -47,7 +58,11 @@ const Navbar = () => {
       </div>
       <div className="iconsContainer">
         <div className="icons">
-        <AiOutlineUser/> <AiOutlineShoppingCart /> <AiOutlineHeart />
+          <AiOutlineUser size={20} />
+          &nbsp;&nbsp;
+          <AiOutlineShoppingCart size={20} />
+          &nbsp;&nbsp;
+          <AiOutlineHeart size={20} />
         </div>
       </div>
     </div>

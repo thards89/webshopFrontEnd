@@ -1,0 +1,15 @@
+.body {
+  font-family: Crismon;
+  color: #a9acc6;
+}
+
+.containerDescrip {
+  width: 800px;
+  height: 108px;
+}
+
+.title {
+  color: #151875;
+  display: flex;
+  justify-content: space-between;
+}

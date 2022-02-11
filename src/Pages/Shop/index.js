@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { ShopLayOut, ImagesInfoSmall } from "../../Components";
 
-
 const Shop = () => {
   const [products, setProducts] = useState(null);
 
@@ -32,23 +31,22 @@ const Shop = () => {
           ? "I am Loading"
           : products.map((product) => {
               return (
-                <div className= "containerAllShop" key={product.id}>
+                <div className="containerAllShop" key={product.id}>
                   <div className="mainContainer">
                     <div>
-                      <ImagesInfoSmall
-                      mainImage= {product.mainImage} />
+                      <ImagesInfoSmall mainImage={product.mainImage} />
                     </div>
                     <div>
-                      <ShopLayOut 
-                        id= {product.id}
-                        title= {product.title}
-                        price= {product.price} 
-                        rating= {product.rating}
-                        description= {product.description}
-                  />
+                      <ShopLayOut
+                        id={product.id}
+                        title={product.title}
+                        price={product.price}
+                        rating={product.rating}
+                        description={product.description}
+                      />
+                    </div>
                   </div>
-                  </div>
-                  </div>
+                </div>
               );
             })}
       </p>
