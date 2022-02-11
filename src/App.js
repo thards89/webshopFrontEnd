@@ -11,9 +11,6 @@ function App() {
         <div>
           <Banner />
         </div>
-        {/* <NavLink className="NavElement" end to="/">
-      Home
-    </NavLink> */}
       </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
