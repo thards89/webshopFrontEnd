@@ -1,0 +1,7 @@
+.signupText {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 10px;
+    font-family: 'Crimson-Pro';
+    line-height: 35px;
+}

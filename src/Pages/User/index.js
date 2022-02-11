@@ -14,10 +14,12 @@ const User = () => {
     const updatedUsers = [];
   };
   return (
-    <div>
-      <h1>User Page </h1>
+    <div className="userContainer">
+      <h2>User Page </h2>
+      <div className="userText" >
       <Signup createUser={createUser} />
       <Login />
+      </div>
     </div>
   );
 };

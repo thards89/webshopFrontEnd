@@ -8,12 +8,12 @@ const Signup = (props) => {
   };
 
   return (
-    <div>
+    <div className="signupText">
       <div>
         <h4>User Signup</h4>
         <form action="/signup" method="post" id="signup">
           <div>
-            <label for="name">Name:</label>
+            <label for="name"><b>Name:</b></label>
             <input
               type="text"
               id="name"
@@ -22,7 +22,7 @@ const Signup = (props) => {
             />
           </div>
           <div>
-            <label for="email">Email:</label>
+            <label for="email"><b>Email:</b></label>
             <input
               type="text"
               id="email"
@@ -31,7 +31,7 @@ const Signup = (props) => {
             />
           </div>
           <div>
-            <label for="name">Password:</label>
+            <label for="name"><b>Password:</b></label>
             <input
               type="text"
               id="password"
