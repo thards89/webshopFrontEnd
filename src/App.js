@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { HomePage, About, Shop, DetailsPage } from "./Pages";
+import { HomePage, About, Shop, DetailsPage, Categories } from "./Pages";
 import { Navbar, Banner, Footer } from "./Components";
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         {/* <Route path="/users" element={<Users />} /> */}
         <Route path="/details/:id" element={<DetailsPage />} />
+        {/* <Route path="/shop/categories/:id" element={<Categories />} /> */}
       </Routes>
       <Footer />
     </div>
