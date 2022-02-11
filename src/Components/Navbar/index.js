@@ -6,7 +6,7 @@ import {
   AiOutlineHeart,
 } from "react-icons/ai";
 
-const Navbar = (props) => {
+const Navbar = () => {
   return (
     <div className="container">
       <div></div>
@@ -40,15 +40,6 @@ const Navbar = (props) => {
             >
               About
             </NavLink>
-            {/* <NavLink
-              to="/users" 
-              className="links"
-              style={({ isActive }) =>
-                isActive ? { color: "white" } : undefined
-              }
-            >
-              Users
-            </NavLink> */}
             &nbsp;
           </div>
         </div>
@@ -58,11 +49,16 @@ const Navbar = (props) => {
       </div>
       <div className="iconsContainer">
         <div className="icons">
-          <AiOutlineUser size={20} />
-          &nbsp;&nbsp;
-          <AiOutlineShoppingCart size={20} />
-          &nbsp;&nbsp;
-          <AiOutlineHeart size={20} />
+          <NavLink
+            to="/user"
+            className="links"
+            style={({ isActive }) =>
+              isActive ? { color: "white" } : undefined
+            }
+          >
+            <AiOutlineUser />
+          </NavLink>
+          <AiOutlineShoppingCart /> <AiOutlineHeart />
         </div>
       </div>
     </div>
